@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="10" configfailurepolicy="skip">
+    <test name="TradeMe Listing Test">
+        <classes>
+            <class name="com.rba.TradeMeListing.TradeMeCarListingTests"></class>
+        </classes>
+    </test>
+</suite>

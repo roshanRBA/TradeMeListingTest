@@ -8,7 +8,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class SingleListing extends BasePage {
 
-    //the first car which is not in the slider
+    //----- WebElements from a single listing page -----
+
     @FindBy(how= How.XPATH, using= "//tg-icon[@name='vehicle-odometer']")
     private WebElement kilometers;
 

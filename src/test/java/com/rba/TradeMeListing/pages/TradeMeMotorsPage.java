@@ -1,10 +1,8 @@
 package com.rba.TradeMeListing.pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -21,9 +19,6 @@ public class TradeMeMotorsPage extends BasePage{
     @FindBy (how= How.XPATH, using= "//button[@type='submit']")
     private WebElement btnSearch;
 
-
-    @Autowired
-    private WebDriver webDriver;
 
     public void searchCars(String keywords){
         btnUsedCars.click();

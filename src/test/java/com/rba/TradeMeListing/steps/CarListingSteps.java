@@ -3,13 +3,12 @@ package com.rba.TradeMeListing.steps;
 import com.rba.TradeMeListing.pages.SearchResults;
 import com.rba.TradeMeListing.pages.SingleListing;
 import com.rba.TradeMeListing.pages.TradeMeMotorsPage;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.testng.Assert;
 
 public class CarListingSteps {

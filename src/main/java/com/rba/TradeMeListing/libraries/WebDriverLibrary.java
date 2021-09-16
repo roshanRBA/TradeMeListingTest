@@ -3,9 +3,7 @@ package com.rba.TradeMeListing.libraries;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
@@ -25,7 +23,6 @@ public class WebDriverLibrary {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(waitTime, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
         return driver;
     }
 
@@ -35,7 +32,6 @@ public class WebDriverLibrary {
         WebDriverManager.firefoxdriver().setup();
         WebDriver driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(waitTime, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
         return driver;
     }
 

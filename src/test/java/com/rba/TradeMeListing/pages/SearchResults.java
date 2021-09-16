@@ -11,12 +11,15 @@ import java.util.Random;
 @Component
 public class SearchResults extends BasePage {
 
+    //----- WebElements from Search results page -----
 
+    //returns a list of WebElements from a search result
     @FindBy(how= How.XPATH, using= "//div[@class='o-card']")
     private List<WebElement> carListFromFirstPage;
 
     public void selectRandomCar(){
-        getRandomCar().click();
+        WebElement rand = getRandomCar();
+        rand.click();
     }
 
     private WebElement getRandomCar(){

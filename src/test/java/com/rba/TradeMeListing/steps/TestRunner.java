@@ -1,4 +1,4 @@
-package com.rba.TradeMeListing.testRunner;
+package com.rba.TradeMeListing.steps;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
@@ -9,4 +9,5 @@ import io.cucumber.testng.CucumberOptions;
         plugin= {"pretty","html:target/site/cucumber-pretty","json:target/cucumber/cucumber.json"}
 )
 class TestRunner extends AbstractTestNGCucumberTests {
+
 }

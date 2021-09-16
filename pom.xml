@@ -99,7 +99,7 @@
 
 				<configuration>
 					<includes>
-						<include>com.rba.TradeMeListing.testRunner.TestRunner</include>
+						<include>com.rba.TradeMeListing.steps.TestRunner</include>
 					</includes>
 				</configuration>
 			</plugin>
